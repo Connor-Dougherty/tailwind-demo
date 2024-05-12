@@ -3,8 +3,18 @@
 @tailwind utilities;
 
 .parent {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    
-    height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+
+  height: 100vh;
+}
+
+@layer components {
+  .error {
+    @apply mt-2 scale-y-0 font-semibold text-red-500;
   }
+
+  .error-true {
+    @apply scale-y-100 transition-transform;
+  }
+}

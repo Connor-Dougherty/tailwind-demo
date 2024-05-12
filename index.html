@@ -1,26 +1,28 @@
 <!doctype html>
 <html lang="en">
-  <div class="parent relative flex min-h-screen flex-col justify-center overflow-hidden bg-cyan-950 py-6 sm:py-12">
-    <header class="section relative bg-cyan-700 px-6 pt-10 pb-8 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10">
+  <div
+    class="parent relative flex min-h-screen flex-col justify-center overflow-hidden bg-cyan-950 py-6 sm:py-12"
+  >
+    <header
+      class="section relative bg-cyan-700 px-6 pb-8 pt-10 shadow-xl ring-1 ring-gray-900/5 sm:mx-auto sm:max-w-lg sm:rounded-lg sm:px-10"
+    >
       <meta charset="UTF-8" />
       <link rel="icon" type="image/svg+xml" href="/vite.svg" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Connor Dougherty</title>
       <link rel="stylesheet" href="./style.css" />
-      <header
-      class="flex items-center justify-center gap-x-4 bg-cyan-700 p-8 "
-      >
-      <img
-        src="./images/me.png"
-        alt=""
-        width="96"
-        height="96"
-        class="rounded-full shadow-lg shadow-grey-300"
-      />
-      <div>
-        <h1 class="text-3xl font-bold">Connor Dougherty</h1>
-        <h2 class="font-thin">SWIC Student</h2>
-      </div>
+      <header class="flex items-center justify-center gap-x-4 bg-cyan-700 p-8">
+        <img
+          src="./images/me.png"
+          alt=""
+          width="96"
+          height="96"
+          class="shadow-grey-300 rounded-full shadow-lg"
+        />
+        <div>
+          <h1 class="text-3xl font-bold">Connor Dougherty</h1>
+          <h2 class="font-thin">SWIC Student</h2>
+        </div>
       </header>
     </header>
     <main class="section bg-cyan-700 py-4">
@@ -29,56 +31,87 @@
           About Me
         </h2>
         <p>
-          I was born in Jan 30 2003, so that currently 21 years old. I'm currently Enrolled at SWIC for a Web Design certificate, and this is currently my 2nd last semester i believe. 
+          I was born in Jan 30 2003, so that currently 21 years old. I'm
+          currently Enrolled at SWIC for a Web Design certificate, and this is
+          currently my 2nd last semester i believe.
         </p>
 
         <p>
-          I Have quite a few hobbies, for instance 2 of my biggest hobbies are doing art (2D and 3D) and playing video games. Some of my other hobbies include Model Trains (both N-scale and HO-scale), Legos, and I guess watching Youtube.
+          I Have quite a few hobbies, for instance 2 of my biggest hobbies are
+          doing art (2D and 3D) and playing video games. Some of my other
+          hobbies include Model Trains (both N-scale and HO-scale), Legos, and I
+          guess watching Youtube.
         </p>
 
         <ul class="space-y-4 border-y-2 border-cyan-950 py-4">
           <li>
-            Hopefully someday soon I'll be able to start on an N-scale layout of Zelda Spirit Tracks, like all of the rail lines and locations from the game. 
+            Hopefully someday soon I'll be able to start on an N-scale layout of
+            Zelda Spirit Tracks, like all of the rail lines and locations from
+            the game.
           </li>
 
           <li>
             📫 How to reach me: If it's important enough, sometimes I am on
-            <a href="https://cdn.discordapp.com/attachments/796252125935697971/1216619986173562974/e11098b9bbf1046dde3ec95a9347d92a.jpg?ex=66010ca8&is=65ee97a8&hm=691559852535bd82a481e69b3c57be43d3ce719de31311dd492ed38941c97678&">Discord</a> or like <a href="https://twitter.com/MIT_CSAIL/status/1363172815315214336?lang=en"> Twitter</a>.
+            <a
+              href="https://cdn.discordapp.com/attachments/796252125935697971/1216619986173562974/e11098b9bbf1046dde3ec95a9347d92a.jpg?ex=66010ca8&is=65ee97a8&hm=691559852535bd82a481e69b3c57be43d3ce719de31311dd492ed38941c97678&"
+              >Discord</a
+            >
+            or like
+            <a
+              href="https://twitter.com/MIT_CSAIL/status/1363172815315214336?lang=en"
+            >
+              Twitter</a
+            >.
           </li>
 
           <li>⚡ Fun facts:</li>
           <ul class="ml-4 space-y-4">
-            <li>Some of my favorite animals are Opossums and Rats. Trash mammals rule!</li>
+            <li>
+              Some of my favorite animals are Opossums and Rats. Trash mammals
+              rule!
+            </li>
             <li>I'm like a super huge fan of horror and spooky stuff!</li>
           </ul>
         </ul>
       </section>
     </main>
     <footer class="section green">
-    <main class="section bg-cyan-700 py-4">
-      <form
-        class="container mx-auto flex max-w-screen-md flex-col gap-4 px-8 py-4 *:rounded md:grid md:grid-cols-2 [&>input]:min-h-12 [&>label]:sr-only"
-      >
-        <label for="name">Name</label>
-        <input type="text" id="name" placeholder="Your Name" />
-
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="✉️" />
-
-        <label for="phone">Phone</label>
-        <input type="tel" id="phone" placeholder="☎️" />
-
-        <label for="message">Message</label>
-        <textarea id="message" placeholder="What's up?"></textarea>
-
-        <button
-          type="submit"
-          class="col-span-2 mt-4 h-12 max-w-min place-self-center bg-green-500 px-4 py-2 text-white"
+      <main class="section bg-cyan-700 py-4">
+        <form
+          class="container mx-auto flex max-w-screen-md flex-col gap-4 px-8 py-4 *:rounded md:grid md:grid-cols-2 [&>input]:min-h-12 [&_label]:sr-only"
         >
-          Submit
-        </button>
-      </form>
-    </main>
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" />
+            <p class="error error-true">Please Enter your name.</p>
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="✉️" />
+            <p class="error error-true">Please Enter a valid email address.</p>
+          </div>
+
+          <div>
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" placeholder="☎️" />
+            <p class="error error-true">Please Enter a valid phone number.</p>
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="What's up?"></textarea>
+            <p class="error error-true">Please Enter a message.</p>
+          </div>
+
+          <button
+            type="submit"
+            class="col-span-2 mt-4 h-12 max-w-min place-self-center bg-green-500 px-4 py-2 text-white"
+          >
+            Submit
+          </button>
+        </form>
+      </main>
     </footer>
   </div>
 </html>
