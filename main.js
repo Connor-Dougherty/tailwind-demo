@@ -16,3 +16,11 @@ formEls.forEach((el) => {
     else hideErrors(e.target);
   });
 });
+
+formEls.forEach((el) => {
+  el.addEventListener("focus", (e) => {
+    const elError = errors.find((error) => error.id === e.target.id);
+    elError.isTouched = true;
+    hideErrors(e.target);
+  });
+});
