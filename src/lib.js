@@ -1,3 +1,4 @@
+import validator from "validator";
 export const errors = [
   {
     id: "name",
@@ -6,11 +7,28 @@ export const errors = [
       return val.length > 6 && val.includes(" ");
     },
   },
-  { id: "email", msg: "Please enter a valid Email." },
-  { id: "phone", msg: "Please enter a valid phone number." },
+  {
+    id: "email",
+    msg: "Please enter a valid Email.",
+    validate(val) {
+      return validator.isEmail(val);
+    },
+  },
+
+  {
+    id: "phone",
+    msg: "Please enter a valid phone number.",
+    validate(val) {
+      return validator.isMobilePhone(val, "en-us");
+    },
+  },
+
   {
     id: "message",
     msg: "Please enter a message 1-99 character.",
+    validate(val) {
+      return val.length >= 10 && val.length <= 100;
+    },
   },
 ];
 
