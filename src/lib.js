@@ -33,7 +33,7 @@ export const errors = [
 ];
 
 export const hideErrors = (el) => {
-  el.parentNode.querySelector(".error").classList.remove(".error-true");
+  el.parentNode.querySelector(".error")?.classList.remove(".error-true");
 };
 
 export const renderErrors = (el, msg) => {
