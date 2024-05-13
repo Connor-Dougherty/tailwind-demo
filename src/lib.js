@@ -37,8 +37,8 @@ export const hideErrors = (el) => {
 };
 
 export const renderErrors = (el, msg) => {
-  const errorsEl = el.parentNode.querySelector(".error");
-
+  const elParent = el.parentNode;
+  const errorsEl = elParent.querySelector(".error");
   if (errorsEl) errorsEl.classList.add(".error-true");
   else {
     const elementError = document.createElement("p");
