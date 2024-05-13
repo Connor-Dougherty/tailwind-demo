@@ -13,3 +13,19 @@ export const errors = [
     msg: "Please enter a message 1-99 character.",
   },
 ];
+
+export const hideErrors = (el) => {
+  el.parentNode.querySelector(".error").classList.remove(".error-true");
+};
+
+export const renderErrors = (el, msg) => {
+  const errorsEl = el.parentNode.querySelector(".error");
+
+  if (errorsEl) errorsEl.classList.add(".error-true");
+  else {
+    const elementError = document.createElement("p");
+    elementError.className = "error error-true";
+    elementError.textContent = msg;
+    el.parentNode.appendChild(elementError);
+  }
+};
