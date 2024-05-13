@@ -1,10 +1,15 @@
-function handleError(element, errorMessage) {
-  // Check if the element exists
-  if (element) {
-    // Display the error message
-    element.textContent = errorMessage;
-    element.style.color = "red"; // Optional: Change the text color to red
-  } else {
-    console.error("Element not found. Unable to display error message.");
-  }
-}
+export const errors = [
+  {
+    id: "name",
+    msg: "Please enter your full name.",
+    validate(val) {
+      return val.length > 6 && val.includes(" ");
+    },
+  },
+  { id: "email", msg: "Please enter a valid Email." },
+  { id: "phone", msg: "Please enter a valid phone number." },
+  {
+    id: "message",
+    msg: "Please enter a message 1-99 character.",
+  },
+];
